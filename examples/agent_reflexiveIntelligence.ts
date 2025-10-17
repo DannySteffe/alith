@@ -1,10 +1,8 @@
 import { Agent } from "alith";
 import * as dotenv from "dotenv";
 
-// Load environment variables
 dotenv.config();
 
-// 🧠 Reflexive Intelligence Agent
 const reflexiveAgent = new Agent({
   model: "grok-beta",
   apiKey: process.env.GROQ_API_KEY || "your-groq-api-key-here", // replace with your actual key
